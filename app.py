@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify, url_for, redirect
 from flask_cors import CORS
 from flask_pymongo import PyMongo, pymongo
 import sys, time
-from bson.objectid import ObjectId
+from bson.json_util import dumps, ObjectId
 
 app = Flask(__name__)
 app.config['MONGO_DBNAME']='todo'
@@ -59,7 +59,7 @@ def task_update():
 
     tasks.save(result)
 
-    return jsonify({'status': res});
+    return jsonify({'status': res})
 
 @app.route('/actives')
 def actives():
