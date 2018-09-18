@@ -1,0 +1,9 @@
+configparser==3.5.0
+googleapis-common-protos==1.5.3
+grpcio==1.15.0
+grpcio-tools==1.15.0
+protobuf==3.6.1
+psycopg2==2.7.5
+pymongo==3.7.1
+six==1.11.0
+virtualenv==16.0.0
